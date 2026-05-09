@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>【2026年最新】脱毛サロン比較ランキング｜編集部おすすめTOP5</title>
+  <meta name="description" content="脱毛サロンを徹底比較！料金・脱毛方式・通いやすさなどを編集部が実際に調査。あなたにぴったりのサロンが見つかります。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #e8334a;
+      --primary-dark: #c0253a;
+      --gold: #f5a623;
+      --silver: #9b9b9b;
+      --bronze: #cd7f32;
+      --rank1: #fff8e1;
+      --rank2: #f5f5f5;
+      --rank3: #fdf3e7;
+      --text: #1a1a2e;
+      --text-sub: #555;
+      --bg: #f8f9fa;
+      --white: #fff;
+      --radius: 12px;
+      --shadow: 0 4px 24px rgba(0,0,0,.10);
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Noto Sans JP', sans-serif; color: var(--text); background: var(--bg); line-height: 1.7; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ===== HEADER ===== */
+    .site-header {
+      background: var(--white);
+      border-bottom: 3px solid var(--primary);
+      position: sticky; top: 0; z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    }
+    .header-inner {
+      max-width: 1100px; margin: 0 auto;
+      padding: 14px 20px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .site-logo { font-size: 1.2rem; font-weight: 900; color: var(--primary); }
+    .site-logo span { color: var(--text); font-size: .85rem; font-weight: 500; display: block; }
+    .header-badge {
+      background: var(--primary); color: #fff;
+      font-size: .7rem; font-weight: 700;
+      padding: 4px 10px; border-radius: 20px;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      /* Unsplash License: free for commercial use, no attribution required */
+      background:
+        linear-gradient(135deg, rgba(26,26,46,0.88) 0%, rgba(45,27,78,0.82) 50%, rgba(232,51,74,0.80) 100%),
+        url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      color: #fff; text-align: center;
+      padding: 60px 20px 50px;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero-eyebrow {
+      display: inline-block;
+      background: var(--gold); color: #1a1a2e;
+      font-size: .75rem; font-weight: 700;
+      padding: 4px 14px; border-radius: 20px;
+      margin-bottom: 16px; letter-spacing: .05em;
+    }
+    .hero h1 {
+      font-size: clamp(1.6rem, 5vw, 2.6rem);
+      font-weight: 900; line-height: 1.3;
+      margin-bottom: 16px;
+    }
+    .hero h1 em { color: var(--gold); font-style: normal; }
+    .hero-sub {
+      font-size: .95rem; opacity: .9;
+      max-width: 560px; margin: 0 auto 28px;
+    }
+    .hero-stats {
+      display: flex; justify-content: center; gap: 24px;
+      flex-wrap: wrap; margin-bottom: 32px;
+    }
+    .hero-stat {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 8px; padding: 10px 20px;
+      text-align: center;
+    }
+    .hero-stat strong { display: block; font-size: 1.4rem; font-weight: 900; color: var(--gold); }
+    .hero-stat span { font-size: .7rem; opacity: .8; }
+    .hero-cta {
+      display: inline-block;
+      background: var(--gold); color: #1a1a2e;
+      font-size: 1rem; font-weight: 900;
+      padding: 16px 40px; border-radius: 50px;
+      box-shadow: 0 4px 20px rgba(245,166,35,.5);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .hero-cta:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(245,166,35,.6); }
+    .hero-note { font-size: .72rem; opacity: .7; margin-top: 10px; }
+
+    /* ===== SECTION COMMON ===== */
+    .section { padding: 60px 20px; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .section-title {
+      text-align: center; font-size: clamp(1.3rem, 3.5vw, 1.9rem);
+      font-weight: 900; margin-bottom: 10px;
+      position: relative;
+    }
+    .section-title::after {
+      content: ''; display: block;
+      width: 48px; height: 4px;
+      background: var(--primary); border-radius: 2px;
+      margin: 12px auto 0;
+    }
+    .section-sub {
+      text-align: center; color: var(--text-sub);
+      font-size: .9rem; margin-bottom: 40px;
+    }
+
+    /* ===== TRUST BAR ===== */
+    .trust-bar {
+      background: var(--white);
+      border-top: 1px solid #eee; border-bottom: 1px solid #eee;
+      padding: 16px 20px;
+    }
+    .trust-bar-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; justify-content: center;
+      align-items: center; gap: 32px; flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex; align-items: center; gap: 8px;
+      font-size: .82rem; font-weight: 700; color: var(--text-sub);
+    }
+    .trust-item .icon { font-size: 0.7rem; color: var(--primary); }
+
+    /* ===== RANKING ===== */
+    .ranking-section { background: var(--bg); }
+    .rank-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+      overflow: hidden;
+      border: 2px solid transparent;
+      transition: transform .25s, box-shadow .25s;
+      position: relative;
+    }
+    .rank-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,.14); }
+    .rank-card.rank-1 { border-color: var(--gold); }
+    .rank-card.rank-2 { border-color: var(--silver); }
+    .rank-card.rank-3 { border-color: var(--bronze); }
+
+    .rank-badge {
+      position: absolute; top: -2px; left: -2px;
+      width: 64px; height: 64px;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      border-radius: var(--radius) 0 var(--radius) 0;
+      font-weight: 900;
+    }
+    .rank-1 .rank-badge { background: var(--gold); color: #fff; }
+    .rank-2 .rank-badge { background: var(--silver); color: #fff; }
+    .rank-3 .rank-badge { background: var(--bronze); color: #fff; }
+    .rank-4 .rank-badge, .rank-5 .rank-badge { background: #ddd; color: #666; }
+    .rank-badge .rank-num { font-size: 1.6rem; line-height: 1; font-family: 'Oswald', sans-serif; }
+    .rank-badge .rank-label { font-size: .55rem; letter-spacing: .05em; }
+
+    .rank-card-inner {
+      padding: 20px 20px 20px 80px;
+      display: grid;
+      grid-template-columns: 120px 1fr auto;
+      gap: 20px; align-items: center;
+    }
+    .rank-logo {
+      background: #f5f5f5; border-radius: 8px;
+      padding: 12px; text-align: center;
+      font-size: .75rem; font-weight: 700; color: #555;
+      aspect-ratio: 1/1;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 4px;
+    }
+    .rank-logo .logo-icon { font-size: 1.3rem; font-weight: 700; color: var(--primary); letter-spacing: 0.05em; }
+
+    .rank-info {}
+    .rank-name {
+      font-size: 1.15rem; font-weight: 900; margin-bottom: 6px;
+    }
+    .rank-1 .rank-name { color: var(--primary); }
+    .rank-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+    .rank-tag {
+      background: #f0f0f0; color: #555;
+      font-size: .68rem; font-weight: 700;
+      padding: 2px 8px; border-radius: 4px;
+    }
+    .rank-tag.hot { background: #ffe0e0; color: var(--primary); }
+    .rank-tag.new { background: #e3f2fd; color: #1565c0; }
+    .rank-stars { color: var(--gold); font-size: .85rem; margin-bottom: 6px; }
+    .rank-stars span { color: var(--text-sub); font-size: .78rem; margin-left: 4px; }
+    .rank-points { font-size: .82rem; color: var(--text-sub); }
+    .rank-points li { margin-bottom: 2px; }
+    .rank-points li::before { content: '✓ '; color: #2ecc71; font-weight: 700; }
+
+    .rank-cta { text-align: center; min-width: 160px; }
+    .rank-price { font-size: .78rem; color: var(--text-sub); margin-bottom: 4px; }
+    .rank-price strong { font-size: 1.1rem; color: var(--primary); font-weight: 900; }
+    .btn-rank {
+      display: block;
+      background: var(--primary); color: #fff;
+      font-size: .82rem; font-weight: 700;
+      padding: 12px 20px; border-radius: 8px;
+      margin-bottom: 6px;
+      transition: background .2s;
+    }
+    .rank-1 .btn-rank { background: var(--gold); color: #1a1a2e; }
+    .btn-rank:hover { filter: brightness(1.1); }
+    .btn-rank-sub {
+      display: block;
+      border: 1.5px solid #ccc; color: var(--text-sub);
+      font-size: .75rem; font-weight: 700;
+      padding: 8px 16px; border-radius: 8px;
+      transition: border-color .2s;
+    }
+    .btn-rank-sub:hover { border-color: var(--primary); color: var(--primary); }
+    .rank-limited {
+      font-size: .68rem; color: var(--primary); font-weight: 700;
+      margin-top: 4px;
+    }
+
+    .rank-card.rank-1 .rank-card-inner {
+      background: var(--rank1);
+    }
+
+    /* ===== COMPARISON TABLE ===== */
+    .table-section { background: var(--white); }
+    .compare-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .compare-table {
+      width: 100%; border-collapse: collapse;
+      min-width: 700px;
+    }
+    .compare-table th, .compare-table td {
+      padding: 14px 16px;
+      text-align: center;
+      border: 1px solid #eee;
+      font-size: .85rem;
+    }
+    .compare-table thead th {
+      background: #1a1a2e; color: #fff;
+      font-weight: 700; font-size: .82rem;
+    }
+    .compare-table thead th:first-child { text-align: left; }
+    .compare-table .item-name {
+      text-align: left; font-weight: 700;
+      background: #f8f9fa; font-size: .82rem;
+    }
+    .compare-table tbody tr:nth-child(even) td { background: #fafafa; }
+    .compare-table .best { color: var(--primary); font-weight: 900; }
+    .compare-table .check { color: #2ecc71; font-size: 1rem; }
+    .compare-table .cross { color: #e74c3c; font-size: .9rem; }
+    .compare-table .rank-col-1 { background: #fffde7 !important; }
+    .compare-table .col-header-1 { background: #e6a817 !important; }
+
+    /* ===== HOW TO CHOOSE ===== */
+    .choose-section { background: var(--bg); }
+    .choose-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .choose-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 28px 24px; text-align: center;
+      box-shadow: var(--shadow);
+      transition: transform .25s;
+    }
+    .choose-card:hover { transform: translateY(-4px); }
+    .choose-icon { font-size: 2.4rem; margin-bottom: 12px; }
+    .choose-title { font-size: 1rem; font-weight: 900; margin-bottom: 8px; }
+    .choose-desc { font-size: .82rem; color: var(--text-sub); line-height: 1.7; }
+
+    /* ===== VOICE ===== */
+    .voice-section { background: var(--white); }
+    .voice-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .voice-card {
+      background: #f8f9fa; border-radius: var(--radius);
+      padding: 24px; position: relative;
+    }
+    .voice-card::before {
+      content: '"'; font-size: 4rem; line-height: 1;
+      color: var(--primary); opacity: .2;
+      position: absolute; top: 12px; left: 16px;
+      font-family: Georgia, serif;
+    }
+    .voice-stars { color: var(--gold); margin-bottom: 10px; font-size: .85rem; }
+    .voice-text { font-size: .85rem; line-height: 1.8; margin-bottom: 14px; }
+    .voice-user { display: flex; align-items: center; gap: 10px; }
+    .voice-avatar {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: var(--primary); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: .8rem; font-weight: 700; flex-shrink: 0;
+    }
+    .voice-name { font-size: .78rem; font-weight: 700; }
+    .voice-meta { font-size: .7rem; color: var(--text-sub); }
+
+    /* ===== FAQ ===== */
+    .faq-section { background: var(--bg); }
+    .faq-list { max-width: 760px; margin: 0 auto; }
+    .faq-item {
+      background: var(--white); border-radius: var(--radius);
+      margin-bottom: 12px; overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+    }
+    .faq-q {
+      display: flex; align-items: center; gap: 14px;
+      padding: 18px 20px; cursor: pointer;
+      font-weight: 700; font-size: .9rem;
+      transition: background .2s;
+    }
+    .faq-q:hover { background: #fafafa; }
+    .faq-q-icon {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: var(--primary); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: .85rem; font-weight: 900; flex-shrink: 0;
+    }
+    .faq-arrow {
+      margin-left: auto; font-size: .8rem; color: var(--text-sub);
+      transition: transform .3s;
+    }
+    .faq-item.open .faq-arrow { transform: rotate(180deg); }
+    .faq-a {
+      display: none; padding: 0 20px 18px 62px;
+      font-size: .85rem; color: var(--text-sub); line-height: 1.8;
+    }
+    .faq-item.open .faq-a { display: block; }
+
+    /* ===== BOTTOM CTA ===== */
+    .bottom-cta {
+      /* Unsplash License: free for commercial use, no attribution required */
+      background:
+        linear-gradient(135deg, rgba(26,26,46,0.90), rgba(45,27,78,0.88)),
+        url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      color: #fff; text-align: center; padding: 60px 20px;
+    }
+    .bottom-cta h2 {
+      font-size: clamp(1.3rem, 4vw, 2rem);
+      font-weight: 900; margin-bottom: 12px;
+    }
+    .bottom-cta p { font-size: .9rem; opacity: .8; margin-bottom: 28px; }
+    .btn-cta-large {
+      display: inline-block;
+      background: var(--gold); color: #1a1a2e;
+      font-size: 1.05rem; font-weight: 900;
+      padding: 18px 48px; border-radius: 50px;
+      box-shadow: 0 4px 24px rgba(245,166,35,.5);
+      transition: transform .2s;
+    }
+    .btn-cta-large:hover { transform: translateY(-3px); }
+
+    /* ===== FOOTER ===== */
+    .site-footer {
+      background: #1a1a2e; color: rgba(255,255,255,.5);
+      text-align: center; padding: 28px 20px;
+      font-size: .75rem; line-height: 1.9;
+    }
+    .footer-links { display: flex; justify-content: center; gap: 20px; margin-bottom: 12px; flex-wrap: wrap; }
+    .footer-links a { color: rgba(255,255,255,.4); transition: color .2s; }
+    .footer-links a:hover { color: rgba(255,255,255,.8); }
+
+    /* ===== SCROLL ANIMATION ===== */
+    .fade-up { opacity: 0; transform: translateY(30px); transition: opacity .6s, transform .6s; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+    /* ===== FLOATING CTA (SP) ===== */
+    .float-cta {
+      display: none;
+      position: fixed; bottom: 0; left: 0; right: 0;
+      background: var(--primary); color: #fff;
+      text-align: center; padding: 14px 20px;
+      font-size: .9rem; font-weight: 900;
+      z-index: 999;
+      box-shadow: 0 -4px 16px rgba(0,0,0,.2);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .rank-card-inner {
+        grid-template-columns: 80px 1fr;
+        padding: 16px 16px 16px 70px;
+      }
+      .rank-cta { grid-column: 1 / -1; display: flex; gap: 10px; align-items: center; }
+      .btn-rank, .btn-rank-sub { flex: 1; text-align: center; }
+      .rank-limited { display: none; }
+      .trust-bar-inner { gap: 16px; }
+      .float-cta { display: block; }
+      body { padding-bottom: 52px; }
+    }
+    @media (max-width: 480px) {
+      .hero { padding: 44px 16px 36px; }
+      .hero-stats { gap: 12px; }
+      .hero-stat { padding: 8px 14px; }
+      .rank-logo { display: none; }
+      .rank-card-inner { grid-template-columns: 1fr; padding: 14px 14px 14px 66px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="site-logo">
+      脱毛サロン比較ナビ
+      <span>編集部が厳選するサロン情報メディア</span>
+    </div>
+    <div class="header-badge">2026年3月 最新版</div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow">★ 編集部おすすめ 最新ランキング</div>
+  <h1>全身脱毛サロン<em>TOP5</em>を<br>徹底比較しました</h1>
+  <p class="hero-sub">料金・脱毛方式・通いやすさ・効果の速さ。4つの視点で人気サロンをリアルに比較。あなたにぴったりの1社が見つかります。</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><strong>47</strong><span>サロン調査</span></div>
+    <div class="hero-stat"><strong>1,200+</strong><span>口コミ分析</span></div>
+    <div class="hero-stat"><strong>月1回</strong><span>情報更新</span></div>
+  </div>
+  <a href="#ranking" class="hero-cta">ランキングを見る ↓</a>
+  <p class="hero-note">※ 本サイトは広告を含みます。掲載情報は調査時点のものです。</p>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="trust-item"><span class="icon">◆</span>編集部による実地調査済み</div>
+    <div class="trust-item"><span class="icon">◆</span>実際の口コミを元に評価</div>
+    <div class="trust-item"><span class="icon">◆</span>毎月情報を更新</div>
+    <div class="trust-item"><span class="icon">◆</span>広告掲載基準を設けています</div>
+  </div>
+</div>
+
+<!-- RANKING -->
+<section class="section ranking-section" id="ranking">
+  <div class="section-inner">
+    <h2 class="section-title">編集部おすすめ 脱毛サロン TOP5</h2>
+    <p class="section-sub">料金・効果・通いやすさを総合評価。2026年3月現在のキャンペーン情報も掲載しています。</p>
+
+    <!-- RANK 1 -->
+    <div class="rank-card rank-1 fade-up">
+      <div class="rank-badge"><span class="rank-num">1</span><span class="rank-label">位</span></div>
+      <div class="rank-card-inner">
+        <div class="rank-logo"><span class="logo-icon">BB</span>BLANC<br>BEAUTY</div>
+        <div class="rank-info">
+          <div class="rank-name">ブランボーテ</div>
+          <div class="rank-tags">
+            <span class="rank-tag hot">今月人気No.1</span>
+            <span class="rank-tag new">初回無料</span>
+            <span class="rank-tag">全国180店舗</span>
+          </div>
+          <div class="rank-stars">★★★★★ <span>4.9（口コミ312件）</span></div>
+          <ul class="rank-points">
+            <li>全身脱毛が月額3,278円〜の業界最安水準</li>
+            <li>最短2ヶ月で効果を実感できる高出力照射</li>
+            <li>当日キャンセルOK・予約が取りやすい</li>
+          </ul>
+        </div>
+        <div class="rank-cta">
+          <div class="rank-price">月額 <strong>3,278円〜</strong></div>
+          <a href="#" class="btn-rank">公式サイトを見る</a>
+          <a href="#" class="btn-rank-sub">詳しく比較する</a>
+          <div class="rank-limited">⏰ 今月末まで初回無料</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RANK 2 -->
+    <div class="rank-card rank-2 fade-up">
+      <div class="rank-badge"><span class="rank-num">2</span><span class="rank-label">位</span></div>
+      <div class="rank-card-inner">
+        <div class="rank-logo"><span class="logo-icon">LS</span>LUCE<br>SALON</div>
+        <div class="rank-info">
+          <div class="rank-name">ルーチェサロン</div>
+          <div class="rank-tags">
+            <span class="rank-tag">脱毛効果が高い</span>
+            <span class="rank-tag">都市部に多い</span>
+          </div>
+          <div class="rank-stars">★★★★★ <span>4.7（口コミ248件）</span></div>
+          <ul class="rank-points">
+            <li>医療並みの高出力SHR方式を採用</li>
+            <li>全身＋VIO＋顔がセットでお得</li>
+            <li>肌荒れ・日焼け肌にも対応可能</li>
+          </ul>
+        </div>
+        <div class="rank-cta">
+          <div class="rank-price">月額 <strong>4,480円〜</strong></div>
+          <a href="#" class="btn-rank">公式サイトを見る</a>
+          <a href="#" class="btn-rank-sub">詳しく比較する</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RANK 3 -->
+    <div class="rank-card rank-3 fade-up">
+      <div class="rank-badge"><span class="rank-num">3</span><span class="rank-label">位</span></div>
+      <div class="rank-card-inner">
+        <div class="rank-logo"><span class="logo-icon">PH</span>PETAL<br>HAIR</div>
+        <div class="rank-info">
+          <div class="rank-name">ペタルヘア</div>
+          <div class="rank-tags">
+            <span class="rank-tag">痛みが少ない</span>
+            <span class="rank-tag new">新規割引中</span>
+          </div>
+          <div class="rank-stars">★★★★☆ <span>4.5（口コミ189件）</span></div>
+          <ul class="rank-points">
+            <li>痛みが少ない蓄熱式レーザーで敏感肌OK</li>
+            <li>スタッフの接客満足度が業界トップクラス</li>
+            <li>学割・友達紹介割引が充実</li>
+          </ul>
+        </div>
+        <div class="rank-cta">
+          <div class="rank-price">月額 <strong>3,980円〜</strong></div>
+          <a href="#" class="btn-rank">公式サイトを見る</a>
+          <a href="#" class="btn-rank-sub">詳しく比較する</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RANK 4 -->
+    <div class="rank-card rank-4 fade-up">
+      <div class="rank-badge"><span class="rank-num">4</span><span class="rank-label">位</span></div>
+      <div class="rank-card-inner">
+        <div class="rank-logo"><span class="logo-icon">LB</span>LUNA<br>BEAUTY</div>
+        <div class="rank-info">
+          <div class="rank-name">ルナビューティー</div>
+          <div class="rank-tags">
+            <span class="rank-tag">都度払いOK</span>
+            <span class="rank-tag">全国展開</span>
+          </div>
+          <div class="rank-stars">★★★★☆ <span>4.3（口コミ142件）</span></div>
+          <ul class="rank-points">
+            <li>都度払いプランで無理なく始められる</li>
+            <li>深夜22時まで営業で会社帰りに通える</li>
+            <li>脱毛後のスキンケアが充実</li>
+          </ul>
+        </div>
+        <div class="rank-cta">
+          <div class="rank-price">都度 <strong>5,500円〜</strong></div>
+          <a href="#" class="btn-rank">公式サイトを見る</a>
+          <a href="#" class="btn-rank-sub">詳しく比較する</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RANK 5 -->
+    <div class="rank-card rank-5 fade-up">
+      <div class="rank-badge"><span class="rank-num">5</span><span class="rank-label">位</span></div>
+      <div class="rank-card-inner">
+        <div class="rank-logo"><span class="logo-icon">VS</span>VERDE<br>SALON</div>
+        <div class="rank-info">
+          <div class="rank-name">ヴェルデサロン</div>
+          <div class="rank-tags">
+            <span class="rank-tag">完全個室</span>
+            <span class="rank-tag">地方にも多い</span>
+          </div>
+          <div class="rank-stars">★★★★☆ <span>4.2（口コミ98件）</span></div>
+          <ul class="rank-points">
+            <li>全店舗完全個室で安心して通える</li>
+            <li>地方都市への出店が多く地方在住者向け</li>
+            <li>男性メニューも充実（ユニセックス対応）</li>
+          </ul>
+        </div>
+        <div class="rank-cta">
+          <div class="rank-price">月額 <strong>4,180円〜</strong></div>
+          <a href="#" class="btn-rank">公式サイトを見る</a>
+          <a href="#" class="btn-rank-sub">詳しく比較する</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="section table-section">
+  <div class="section-inner">
+    <h2 class="section-title">5サロン 徹底比較表</h2>
+    <p class="section-sub">主要項目をまとめて比較。横にスクロールしてご覧いただけます。</p>
+    <div class="compare-wrap fade-up">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th style="min-width:140px">比較項目</th>
+            <th class="col-header-1" style="min-width:120px">1位 ブランボーテ</th>
+            <th style="min-width:120px">2位 ルーチェ</th>
+            <th style="min-width:120px">3位 ペタルヘア</th>
+            <th style="min-width:120px">ルナ</th>
+            <th style="min-width:120px">ヴェルデ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="item-name">全身月額料金</td>
+            <td class="rank-col-1 best">3,278円〜</td>
+            <td>4,480円〜</td>
+            <td>3,980円〜</td>
+            <td>都度5,500円</td>
+            <td>4,180円〜</td>
+          </tr>
+          <tr>
+            <td class="item-name">脱毛方式</td>
+            <td class="rank-col-1">SHR方式</td>
+            <td>高出力SHR</td>
+            <td>蓄熱式</td>
+            <td>IPL方式</td>
+            <td>SHR方式</td>
+          </tr>
+          <tr>
+            <td class="item-name">全国店舗数</td>
+            <td class="rank-col-1 best">180店舗</td>
+            <td>120店舗</td>
+            <td>95店舗</td>
+            <td>210店舗</td>
+            <td>140店舗</td>
+          </tr>
+          <tr>
+            <td class="item-name">初回体験</td>
+            <td class="rank-col-1"><span class="check">✓</span> 無料</td>
+            <td><span class="check">✓</span> 500円</td>
+            <td><span class="check">✓</span> 無料</td>
+            <td><span class="check">✓</span> 1,000円</td>
+            <td><span class="cross">－</span> なし</td>
+          </tr>
+          <tr>
+            <td class="item-name">VIO対応</td>
+            <td class="rank-col-1"><span class="check">✓</span> あり</td>
+            <td><span class="check">✓</span> あり</td>
+            <td><span class="check">✓</span> あり</td>
+            <td><span class="check">✓</span> あり</td>
+            <td><span class="check">✓</span> あり</td>
+          </tr>
+          <tr>
+            <td class="item-name">男性メニュー</td>
+            <td class="rank-col-1"><span class="check">✓</span> あり</td>
+            <td><span class="cross">✗</span> なし</td>
+            <td><span class="cross">✗</span> なし</td>
+            <td><span class="check">✓</span> あり</td>
+            <td><span class="check">✓</span> あり</td>
+          </tr>
+          <tr>
+            <td class="item-name">当日予約</td>
+            <td class="rank-col-1"><span class="check">✓</span> 可</td>
+            <td><span class="check">✓</span> 可</td>
+            <td><span class="cross">✗</span> 不可</td>
+            <td><span class="check">✓</span> 可</td>
+            <td><span class="cross">✗</span> 不可</td>
+          </tr>
+          <tr>
+            <td class="item-name">総合評価</td>
+            <td class="rank-col-1 best">★ 4.9</td>
+            <td>★ 4.7</td>
+            <td>★ 4.5</td>
+            <td>★ 4.3</td>
+            <td>★ 4.2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO CHOOSE -->
+<section class="section choose-section">
+  <div class="section-inner">
+    <h2 class="section-title">脱毛サロンの選び方</h2>
+    <p class="section-sub">失敗しないために、4つのポイントを押さえましょう</p>
+    <div class="choose-grid">
+      <div class="choose-card fade-up">
+        <div class="choose-icon">💰</div>
+        <div class="choose-title">① 料金・プランで選ぶ</div>
+        <div class="choose-desc">月額制 vs 都度払い。通い続けやすい料金体系かどうかを確認しましょう。総額で比較するのがポイントです。</div>
+      </div>
+      <div class="choose-card fade-up">
+        <div class="choose-icon">⚡</div>
+        <div class="choose-title">② 脱毛方式で選ぶ</div>
+        <div class="choose-desc">SHR・蓄熱式は痛みが少なく敏感肌向け。IPL方式はコスパ重視の方に。医療脱毛並みの効果なら高出力機器のサロンを。</div>
+      </div>
+      <div class="choose-card fade-up">
+        <div class="choose-icon">📍</div>
+        <div class="choose-title">③ 通いやすさで選ぶ</div>
+        <div class="choose-desc">最低でも月1回は通う必要があります。職場・自宅の近くに店舗があるか、営業時間が自分の生活に合っているかを確認してください。</div>
+      </div>
+      <div class="choose-card fade-up">
+        <div class="choose-icon">🛡️</div>
+        <div class="choose-title">④ サポート・保証で選ぶ</div>
+        <div class="choose-desc">肌トラブル時の対応、解約条件、返金保証の有無を事前に確認。アフターサポートが充実しているサロンを選ぶと安心です。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VOICE -->
+<section class="section voice-section">
+  <div class="section-inner">
+    <h2 class="section-title">利用者の声</h2>
+    <p class="section-sub">実際に通った方のリアルな口コミをご紹介します</p>
+    <div class="voice-grid">
+      <div class="voice-card fade-up">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-text">ブランボーテは予約が取りやすくて本当に助かります。月額も安いのに施術の丁寧さが感動レベル。3ヶ月で明らかに毛が薄くなりました。</p>
+        <div class="voice-user">
+          <div class="voice-avatar">M</div>
+          <div>
+            <div class="voice-name">みほ（28歳・会社員）</div>
+            <div class="voice-meta">ブランボーテ利用 / 6ヶ月目</div>
+          </div>
+        </div>
+      </div>
+      <div class="voice-card fade-up">
+        <div class="voice-stars">★★★★★</div>
+        <p class="voice-text">ルーチェサロンは少し高めですが、その分効果が段違い。VIOも込みのセットプランがお得で、スタッフさんの対応も丁寧でした。</p>
+        <div class="voice-user">
+          <div class="voice-avatar">A</div>
+          <div>
+            <div class="voice-name">あやか（32歳・看護師）</div>
+            <div class="voice-meta">ルーチェサロン利用 / 8ヶ月目</div>
+          </div>
+        </div>
+      </div>
+      <div class="voice-card fade-up">
+        <div class="voice-stars">★★★★☆</div>
+        <p class="voice-text">敏感肌で他のサロンでは肌荒れしてしまいましたが、ペタルヘアの蓄熱式は全く問題なし。痛みが少なくて通いやすいのもポイントです。</p>
+        <div class="voice-user">
+          <div class="voice-avatar">Y</div>
+          <div>
+            <div class="voice-name">ゆきな（25歳・学生）</div>
+            <div class="voice-meta">ペタルヘア利用 / 4ヶ月目</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq-section">
+  <div class="section-inner">
+    <h2 class="section-title">よくある質問</h2>
+    <p class="section-sub">脱毛サロン選びに関するお悩みにお答えします</p>
+    <div class="faq-list">
+      <div class="faq-item fade-up">
+        <div class="faq-q">
+          <div class="faq-q-icon">Q</div>
+          脱毛サロンと医療脱毛の違いは何ですか？
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">脱毛サロンは「永久脱毛」の法的な行為はできませんが、業務用の高性能機器で毛の成長を抑制します。医療脱毛はより高い出力で効果が早い反面、費用が高めです。初めての方にはコスパの高いサロン脱毛がおすすめです。</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-q">
+          <div class="faq-q-icon">Q</div>
+          何回通えば効果を実感できますか？
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">個人差はありますが、一般的には3〜5回の施術で「生えにくくなった」と感じる方が多いです。全体的なツルツル感を得るには10回前後が目安となります。</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-q">
+          <div class="faq-q-icon">Q</div>
+          途中解約はできますか？返金はありますか？
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">ほとんどのサロンで途中解約が可能です。返金については、未施術分の返金に対応しているサロンが多いですが、解約手数料が発生する場合があります。契約前に必ず確認しましょう。</div>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-q">
+          <div class="faq-q-icon">Q</div>
+          生理中でも施術を受けられますか？
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">VIO以外の部位であれば、ほとんどのサロンで生理中でも施術が可能です。VIO脱毛については生理中は基本的に対応不可となりますが、その場合は他の部位への振り替えに対応してもらえる場合があります。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOTTOM CTA -->
+<section class="bottom-cta">
+  <h2>まずは無料カウンセリングから</h2>
+  <p>気になるサロンの公式サイトで、無料体験や来店予約ができます。<br>比較してから決めたい方は、複数サロンを並行して体験するのもおすすめです。</p>
+  <a href="#ranking" class="btn-cta-large">ランキングに戻る ↑</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="#">プライバシーポリシー</a>
+    <a href="#">広告掲載について</a>
+    <a href="#">運営者情報</a>
+    <a href="#">お問い合わせ</a>
+  </div>
+  <p>本サイトはアフィリエイト広告を利用しています。掲載情報は取材・調査時点のものであり、変更になる場合があります。</p>
+  <p style="margin-top:8px">© 2026 脱毛サロン比較ナビ. All Rights Reserved.</p>
+</footer>
+
+<!-- FLOATING CTA (SP) -->
+<a href="#ranking" class="float-cta">📋 ランキングを見る</a>
+
+<script>
+  // Scroll animation
+  const fadeEls = document.querySelectorAll('.fade-up');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  fadeEls.forEach(el => observer.observe(el));
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+</script>
+</body>
+</html>
